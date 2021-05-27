@@ -1,7 +1,7 @@
 # Hackintosh-Dell-Latitude-7390-2-in-1-OpenCore-EFI
 
 
-EFI for MacOS Big Sur, using OpenCore 0.6.5 (as of 23/01/2021). 
+EFI for MacOS Big Sur 11.4, using OpenCore 0.6.9 (as of 27/05/2021). 
 
 
 ## What Works
