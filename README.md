@@ -1,7 +1,7 @@
 # Hackintosh-Dell-Latitude-7390-2-in-1-OpenCore-EFI
 
 
-EFI for MacOS Big Sur 11.4, using OpenCore 0.6.9 (as of 27/05/2021). 
+EFI for MacOS Big Sur 11.5.2, using OpenCore 0.7.2 (as of 28/08/2021). 
 
 
 ## What Works
@@ -11,10 +11,14 @@ EFI for MacOS Big Sur 11.4, using OpenCore 0.6.9 (as of 27/05/2021).
 - USB 3 ports
 - HDMI
 - Web camera
-- touchpad 
-- touchscreen
-- pen support (with palm rejection)
-- keyboard
+- Touchpad 
+- Touchscreen
+- Pen support (with palm rejection)
+- Keyboard
+
+## What You Need to Add
+
+- SMBIOS info (see the [platform info](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html#platforminfo)) section in the Dortania Opencore Guide (specifically, the *MLB*, *SystemSerialNumber* and *SystemUUID*).
 
 
 ## What Needs Work
@@ -25,4 +29,8 @@ EFI for MacOS Big Sur 11.4, using OpenCore 0.6.9 (as of 27/05/2021).
 
 - Brightness keys (currently mapped to Function + S, Function + B) are not mapped to the arrow keys.
 
-- iMessage - follow Dortania's OpenCore guide to sort this out.
+- iServices - follow Dortania's OpenCore guide to sort this out.
+
+## Future Development
+
+As this originally started as a personal side project during my Christmas break, I failed to properly document the sources for each kext, driver etc. and the reason wht they were necessary. At some point in the future, I will start from scratch and work out the reason for each additional file and change to OpenCore. Hopefully, this will fix the sleep issues that are the main issue at the moment.
